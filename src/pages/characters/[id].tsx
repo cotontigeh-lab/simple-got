@@ -12,6 +12,8 @@ type CharacterPageProps = {
 export default function Character({ character }: CharacterPageProps) {
   const { t } = useTranslation('characters')
 
+  console.log(character.playedBy)
+
   return (
     <MainLayout
       title={
@@ -24,7 +26,7 @@ export default function Character({ character }: CharacterPageProps) {
     >
       <div className="flex flex-col gap-2">
         <h2>{t('seasons')}</h2>
-        {character.tvSeries.length ? (
+        {character.tvSeries.length && character.tvSeries[0].length ? (
           <ul className="list-disc pl-4">
             {character.tvSeries.map((serie, key) => (
               <li key={key}>{serie}</li>
@@ -37,7 +39,7 @@ export default function Character({ character }: CharacterPageProps) {
 
       <div className="flex flex-col gap-2">
         <h2>{t('actors')}</h2>
-        {character.playedBy.length ? (
+        {character.playedBy.length && character.playedBy[0].length ? (
           <ul className="list-disc pl-4">
             {character.playedBy.map((actor, key) => (
               <li key={key}>{actor}</li>
