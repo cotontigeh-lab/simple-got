@@ -14,7 +14,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
   const handleLocaleClick = useCallback(
     (locale: Locales) => {
-      router.push(router.pathname, router.pathname, { locale })
+      router.push(router.asPath, router.asPath, { locale })
     },
     [router],
   )

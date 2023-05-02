@@ -6,6 +6,10 @@ h1 {
   @apply text-4xl font-extrabold;
 }
 
+h2 {
+  @apply text-2xl font-extrabold;
+}
+
 .absolute-center {
   @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
 }

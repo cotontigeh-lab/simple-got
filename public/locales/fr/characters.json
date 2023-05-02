@@ -1,3 +1,8 @@
 {
-  "title": "Tout les personnages"
+  "title": "Tout les personnages",
+  "seasons": "Présent dans les saisons",
+  "no-season": "N'apparaît jamais dans la série télé",
+  "actors": "Joué par",
+  "no-actors": "N'a jamais joué dans la série télé",
+  "gender": "Genre"
 }

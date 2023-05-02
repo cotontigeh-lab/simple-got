@@ -1,3 +1,6 @@
 {
-  "title": "All the books"
+  "title": "All the books",
+  "authors": "Author",
+  "pages": "Number of pages",
+  "seriesNumber": "ISBN"
 }

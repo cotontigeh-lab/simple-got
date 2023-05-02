@@ -1,3 +1,8 @@
 {
-  "title": "All characters"
+  "title": "All characters",
+  "seasons": "Present in season",
+  "no-season": "never appear on the tv show",
+  "actors": "Played by",
+  "no-actors": "Never played on the tv show",
+  "gender": "Gender"
 }
