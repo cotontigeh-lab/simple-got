@@ -19,7 +19,7 @@ export default function Home({ characters, books }: HomePageProps) {
 
   return (
     <MainLayout title={t('title')}>
-      <h1>Books</h1>
+      <h1>{t('books')}</h1>
 
       <div className="flex flex-col gap-2">
         {books.map((book) => (
@@ -34,6 +34,8 @@ export default function Home({ characters, books }: HomePageProps) {
       </Link>
 
       <div className="divider"></div>
+
+      <h1>{t('characters')}</h1>
 
       <div className="flex flex-col gap-2">
         {characters.map((character) => (
