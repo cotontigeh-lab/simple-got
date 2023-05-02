@@ -20,7 +20,13 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   )
 
   return (
-    <div className={classNames('absolute right-5 top-5', className)} {...rest}>
+    <div
+      className={classNames(
+        'fixed md:absolute right-4 bottom-4 md:top-10 md:bottom-0',
+        className,
+      )}
+      {...rest}
+    >
       <div className="btn-group">
         <button
           className={classNames('btn', locale === Locales.en ? 'btn-active' : undefined)}
