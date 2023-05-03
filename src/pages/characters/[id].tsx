@@ -12,8 +12,6 @@ type CharacterPageProps = {
 export default function Character({ character }: CharacterPageProps) {
   const { t } = useTranslation('characters')
 
-  console.log(character.playedBy)
-
   return (
     <MainLayout
       title={

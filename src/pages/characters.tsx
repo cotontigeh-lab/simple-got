@@ -11,7 +11,7 @@ type CharactersPageProps = {
   characters: Character[]
 }
 
-export default function Characters({ characters }: CharactersPageProps) {
+export default function Characters({ characters = [] }: CharactersPageProps) {
   const { t } = useTranslation('characters')
 
   return (
@@ -24,7 +24,7 @@ export default function Characters({ characters }: CharactersPageProps) {
           >
             {character.name.length
               ? `${character.name} ${
-                  character.aliases[0] ? `(${character.aliases[0]})` : null
+                  character.aliases[0] ? `(${character.aliases[0]})` : ''
                 }`
               : character.aliases[0]}
           </Item>

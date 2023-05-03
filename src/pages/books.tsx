@@ -11,7 +11,7 @@ type BooksPageProps = {
   books: Book[]
 }
 
-export default function Books({ books }: BooksPageProps) {
+export default function Books({ books = [] }: BooksPageProps) {
   const { t } = useTranslation('books')
 
   return (
